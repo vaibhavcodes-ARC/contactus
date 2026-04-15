@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;600;700&display=swap');
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🌌 BACKGROUND */
+.contact-page {
+  min-height: 100vh;
+  width: 100%;
+
+  background:
+    radial-gradient(circle at 20% 30%, rgba(59,130,246,0.4), transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(236,72,153,0.3), transparent 40%),
+    radial-gradient(circle at 50% 90%, rgba(249,115,22,0.3), transparent 40%),
+    url("/public/bg.png") no-repeat center center/cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 20px;
+  color: white;
+}
+
+/* CONTENT */
+.content {
+  max-width: 750px;
+  width: 100%;
+}
+
+/* 🔥 TITLE BIG + BOLD */
+.title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* 👤 PERSON */
+.person {
+  margin-bottom: 30px;
+}
+
+.person h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.person p {
+  font-size: 1.05rem;
+  font-family: 'Inter', sans-serif;
+  opacity: 0.9;
+}
+
+/* 🔘 3D BUTTON */
+.btn {
+  margin-top: 12px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+
+  background: linear-gradient(145deg, #3b82f6, #ec4899, #f97316);
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+
+  box-shadow:
+    0 6px 0 #111, /* bottom shadow */
+    0 10px 20px rgba(0,0,0,0.4);
+
+  transition: all 0.15s ease;
+}
+
+/* CLICK EFFECT */
+.btn:active {
+  transform: translateY(4px);
+  box-shadow:
+    0 2px 0 #111,
+    0 5px 10px rgba(0,0,0,0.3);
+}
+
+/* HOVER */
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* VENUE */
+.venue-title {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/* MAP BUTTON 3D */
+.map-btn {
+  padding: 12px 28px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+
+  background: linear-gradient(145deg, #2563eb, #3b82f6);
+  color: white;
+  font-weight: 700;
+
+  box-shadow:
+    0 6px 0 #111,
+    0 10px 20px rgba(0,0,0,0.4);
+
+  margin-bottom: 20px;
+}
+
+/* CLICK EFFECT */
+.map-btn:active {
+  transform: translateY(4px);
+  box-shadow:
+    0 2px 0 #111,
+    0 5px 10px rgba(0,0,0,0.3);
+}
+
+/* MAP */
+.map-container iframe {
+  width: 100%;
+  height: 320px;
+  border-radius: 15px;
+  border: none;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.3rem;
+  }
+
+  .person h2 {
+    font-size: 1.3rem;
+  }
+
+  .map-container iframe {
+    height: 250px;
+  }
+}
